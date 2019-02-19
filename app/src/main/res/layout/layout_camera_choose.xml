@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_e6e6e6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/camera_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="相机"
+            android:textColor="#333333"
+            android:textSize="18sp"/>
+        <View
+            android:id="@+id/v_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/camera_type"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/tv_system_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_top"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="从相册中选择"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/camera_cancle"
+        android:layout_below="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_rectangle_e6e6e6"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

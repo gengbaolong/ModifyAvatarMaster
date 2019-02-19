@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_dialog_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_custom_dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/custom_dialog_rl_contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_custom_dialog_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="22dp"
+            android:paddingTop="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/custom_dialog_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/custom_dialog_tv_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/custom_dialog_tv_subcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/custom_dialog_rl_btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/custom_dialog_bottom_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/custom_dialog_ll_btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_dialog_bottom_separator">
+
+            <Button
+                android:id="@+id/custom_dialog_leftbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_left_selector"
+                android:gravity="center"
+                android:textColor="#007AFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/custom_dialog_btn_separate"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e8e8e8" />
+
+            <Button
+                android:id="@+id/custom_dialog_rightbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_right_selector"
+                android:gravity="center"
+                android:textColor="#007AFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
